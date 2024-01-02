@@ -6,6 +6,7 @@ function countOccurrences(string, char) {
       counter += 1;
     }
   }
+
   return counter;
 }
 
