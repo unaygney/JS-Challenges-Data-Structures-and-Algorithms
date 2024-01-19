@@ -7,14 +7,14 @@
  */
 function validAnagrams(str1, str2) {
   // Split the strings into arrays of characters, then reduce each array into an object of character frequencies for the first string
-  const freqCount1 = str1.split('').reduce((acc, char) => {
+  const freqCount1 = str1.split("").reduce((acc, char) => {
     // Increment the frequency of the character or initialize it to 1 if not present
     acc[char] = (acc[char] || 0) + 1;
     return acc;
   }, {});
 
   // Split the strings into arrays of characters, then reduce each array into an object of character frequencies for the second string
-  const freqCount2 = str2.split('').reduce((acc, char) => {
+  const freqCount2 = str2.split("").reduce((acc, char) => {
     // Increment the frequency of the character or initialize it to 1 if not present
     acc[char] = (acc[char] || 0) + 1;
     return acc;
@@ -27,5 +27,5 @@ function validAnagrams(str1, str2) {
 }
 
 // Example usage:
-const result = validAnagrams('listen', 'silent');
-console.log(result);  // Output: true
+const result = validAnagrams("listen", "silent");
+console.log(result); // Output: true
