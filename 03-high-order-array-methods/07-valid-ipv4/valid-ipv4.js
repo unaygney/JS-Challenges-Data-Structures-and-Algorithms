@@ -6,9 +6,15 @@ const isValidIPv4 = (str) => {
     return false;
   }
 
-  // does start with zero??
+  // does start with zero?? or up to 255??
   for (let i = 0; i < STRING_LENGTH; i++) {
-    if (SPLIT_ARRAY[i].startsWith("0") || SPLIT_ARRAY[i].endsWith("0")) {
+    const currentValue = parseFloat(SPLIT_ARRAY[i]);
+
+    if (
+      SPLIT_ARRAY[i].startsWith("0") ||
+      SPLIT_ARRAY[i].endsWith("0") ||
+      currentValue >= 255
+    ) {
       return false;
     }
   }
