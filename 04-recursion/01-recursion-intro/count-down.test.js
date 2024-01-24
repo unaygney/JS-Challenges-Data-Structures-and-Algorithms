@@ -1,6 +1,6 @@
-const countDown = require('./count-down');
+const countDown = require("./count-down");
 
-describe('countDown', () => {
+describe("countDown", () => {
   let originalLog;
 
   beforeAll(() => {
@@ -19,15 +19,15 @@ describe('countDown', () => {
     expect(console.log).toHaveBeenNthCalledWith(1, 3); // 3 is logged first
     expect(console.log).toHaveBeenNthCalledWith(2, 2); // 2 is logged next
     expect(console.log).toHaveBeenNthCalledWith(3, 1); // 1 is logged last
-    expect(console.log).toHaveBeenNthCalledWith(4, 'All done!'); // 'All done!' is logged after counting down
+    expect(console.log).toHaveBeenNthCalledWith(4, "All done!"); // 'All done!' is logged after counting down
   });
 
-  it('should handle num <= 0', () => {
+  it("should handle num <= 0", () => {
     countDown(0);
-    expect(console.log).toHaveBeenCalledWith('All done!'); // 'All done!' is logged when num is 0
+    expect(console.log).toHaveBeenCalledWith("All done!"); // 'All done!' is logged when num is 0
 
     console.log.mockClear(); // Clear the previous logs
     countDown(-1);
-    expect(console.log).toHaveBeenCalledWith('All done!'); // 'All done!' is logged when num is negative
+    expect(console.log).toHaveBeenCalledWith("All done!"); // 'All done!' is logged when num is negative
   });
 });
