@@ -1,4 +1,4 @@
-const sumUpTo = require('./sum-up-to');
+const sumUpTo = require("./sum-up-to");
 
 const result = sumUpTo(6);
 
