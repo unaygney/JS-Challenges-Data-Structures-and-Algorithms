@@ -1,7 +1,7 @@
-const fibonacci = require('./fibonacci');
+const fibonacci = require("./fibonacci");
 
-describe('fibonacci', () => {
-  it('should return the correct Fibonacci number', () => {
+describe("fibonacci", () => {
+  it("should return the correct Fibonacci number", () => {
     expect(fibonacci(0)).toBe(0); // The 0th Fibonacci number is 0
     expect(fibonacci(1)).toBe(1); // The 1st Fibonacci number is 1
     expect(fibonacci(2)).toBe(1); // The 2nd Fibonacci number is 1 (0 + 1)
