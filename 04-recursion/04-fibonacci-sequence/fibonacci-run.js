@@ -1,4 +1,4 @@
-const fibonacci = require('./fibonacci');
+const fibonacci = require("./fibonacci");
 
 const result = fibonacci(8);
 
