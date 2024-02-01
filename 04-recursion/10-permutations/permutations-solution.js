@@ -4,7 +4,7 @@ function permutations(str) {
 
   // If str is an empty string, push an empty string to result and return
   if (str.length === 0) {
-    result.push('');
+    result.push("");
     return result;
   }
 
